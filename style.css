@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./images/bg-intro-desktop.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsla(0, 100%, 74%,100%);
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.container{
+    width:70%;
+    height:70%;
+    display: flex;
+} 
+div.main_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+div.content h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+    line-height: 1.25em;
+
+}
+div.content p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin-top: 2em;
+}
+
+div.secondcontent{
+    width: 100%;
+    font-family:"Poppins", sans-serif;
+
+}
+.try{
+    font-weight: bold;
+}
+div.form{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 1em;
+    height: 82%;
+
+}
+
+input{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 3.5em;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    border: solid hsl(246, 25%, 77%);
+    box-sizing: border-box;
+    padding-left: 2em;
+    color: hsl(245, 14%, 67%);
+    position: relative;
+    
+}
+ /* for button */
+button.offer{
+    display: block;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding:10px ;
+    width: 100%;
+    border-radius: 5px;
+    border-style: none;
+    height: 4em;
+    margin-bottom: 1.5em;
+}
+button.offer:hover{
+    cursor: pointer;
+    background-color: hsl(249, 10%, 26%) ;
+}
+.trial{
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    width: 80%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-style: none;
+    border-radius: 5px;
+    height: 3.5em;
+
+}
+p.last{
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 12px;
+    color: hsl(246, 25%, 77%);
+}
+
+.final{
+    color:red;
+    font-weight:bold;
+}
+.error{
+    display:none ; 
+}
+.show{
+    display: block;
+    font-size: 10px;
+    color: red;
+    font-style: italic;
+    padding-left: 2em;
+    width: 80%;
+    margin: auto;
+    max-height:0;
+}
+
+
+@media only screen and (max-width:375px)
+{
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+        background-color: hsla(0, 100%, 74%,100%);
+        background-repeat: no-repeat;
+    }
+    main{
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family:"Poppins", sans-serif;
+
+    }
+    
+    div.container{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    h1,p.first{
+        text-align: center;
+
+    }
+    div.content h1{
+        font-size: 2em;
+    }
+    div.content p{
+        margin-top: 1.5em;
+        font-size: 1em;
+    }
+    button.offer{
+        font-size: 1em;
+        margin-top: 3.5em;
+        padding: 1.25em 20%;
+        height: fit-content;
+        line-height: 25px;
+    }
+    div.form{
+        height: auto;
+    }
+    p.last{
+        padding-bottom: 2.5em;
+    }
+
+}
